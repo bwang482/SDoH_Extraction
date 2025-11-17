@@ -1,0 +1,23 @@
+# NLP and text processing
+pysbd>=0.3.4
+pyrush==1.0.9
+thefuzz>=0.19.0
+python-Levenshtein>=0.12.2
+
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.21.0
+medspacy>=1.0.0
+
+# Utilities
+loguru>=0.6.0
+tqdm>=4.64.0
+pyyaml>=6.0
+
+# Testing dependencies
+pytest>=7.2.0
+pytest-cov>=4.0.0
+
+# Type checking
+mypy>=0.991
+types-pyyaml>=6.0.0

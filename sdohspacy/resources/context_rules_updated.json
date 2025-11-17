@@ -1,0 +1,2344 @@
+{
+  "context_rules": [
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "want to",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["want", "wants", "wish", "wishes", "like", "likes"]
+          }
+        },
+        {
+          "LOWER": "to"
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "intend",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["intend", "intends"]
+          }
+        },
+        {
+          "LOWER": "to"
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "seek",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["seek", "seeks", "seeking"]
+          }
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "consider",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["consider", "considers"]
+          }
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "aim to",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "counseled",
+      "pattern": [
+        {
+          "LOWER": "counseled"
+        },
+        {
+          "OP": "?"
+        },
+        {
+          "LOWER": {
+            "IN": ["on", "to"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "would favor",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "would benefit from",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "would like to",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "please attempt",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "will attempt",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "tomorrow",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "suggested",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["suggest", "suggested"]
+          }
+        }
+      ],
+      "direction": "BIDIRECTIONAL"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "educated",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "motivated",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["motivated", "motivating"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "hopes to",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["hope", "hopes", "hoping"]
+          }
+        },
+        {
+          "LOWER": "to"
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 4
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "goal of",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "discussed",
+      "pattern": null,
+      "direction": "BIDIRECTIONAL",
+      "max_scope": 5
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "will discuss",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "will f/u with",
+      "pattern": [
+        {
+          "LOWER": "will",
+          "OP": "?"
+        },
+        {
+          "LOWER": "f/u",
+          "OP": "?"
+        },
+        {
+          "LOWER": "with",
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "Recommend",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["recommend", "rec"]
+          }
+        },
+        {
+          "LOWER": "to",
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "Recommendation for",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["recommendation", "recommendations"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["for", "to", "would"]
+          }
+        },
+        {
+          "LOWER": "be",
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "Recommended",
+      "pattern": null,
+      "direction": "BIDIRECTIONAL"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "encouraged",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["encourage", "encouraged", "enc"]
+          }
+        },
+        {
+          "LOWER": "to",
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "is encouraged",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "aim for",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["aim", "aims"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["for", "to"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "is going to",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "plan for",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "Counselled on",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "beneficial effects of",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "importance of",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "is important",
+      "pattern": null,
+      "direction": "BACKWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "could be",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "advised",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["advise", "advised"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "need to",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["need", "needs", "needed", "needing"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["to", "for"]
+          }
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 4
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "Homework [if applicable]",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "AM-PAC 6-Clicks",
+      "pattern": null,
+      "direction": "BIDIRECTIONAL"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "limit pt's ability to",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["limit", "limits"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["patient", "pt", "patients", "pts", "his", "her", "the"]
+          }
+        },
+        {
+          "LOWER": "'s",
+          "OP": "?"
+        },
+        {
+          "LOWER": "ability"
+        },
+        {
+          "LOWER": "to"
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "unable to",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": ": 0",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "0 times",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["0", "zero", ":0"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["time", "times"]
+          }
+        }
+      ],
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "avoid",
+      "pattern": [
+        {
+          "LOWER": "avoid"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "interferes with",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["interferes", "interfere"]
+          }
+        },
+        {
+          "LOWER": "with"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "interfering with",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "Never",
+      "pattern": null,
+      "direction": "BIDIRECTIONAL",
+      "max_scope": 6
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": ": Never",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "Never True",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "Not hard at all",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "No.",
+      "pattern": null,
+      "direction": "BACKWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "do not",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["do", "does", "did", "can", "have", "has"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 5
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "with the exception of",
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "do not think",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["do", "does", "did"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": "think"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "few if any",
+      "pattern": [
+        {
+          "LOWER": "a",
+          "OP": "!"
+        },
+        {
+          "LOWER": "few"
+        },
+        {
+          "LOWER": "if",
+          "OP": "?"
+        },
+        {
+          "LOWER": "any",
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": ";",
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not yet involved in",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "elimination of",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "[no]",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "stopped",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "struggle with",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["struggle", "struggles", "struggling"]
+          }
+        },
+        {
+          "LOWER": "with"
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 5
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "problems with/getting",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["problems", "probelms", "issues", "trouble"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["getting", "with"]
+          }
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 2
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "lost",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 2
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not having",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "no access to",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not due to",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not complained about",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "have difficulty",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 5
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "?",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "tolerance",
+      "pattern": null,
+      "direction": "BACKWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "capacity",
+      "pattern": null,
+      "direction": "BACKWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "(Pended)",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "I choose not to answer",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "impact on",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "may",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 2
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "appears to",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 2
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "concern about",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["concern", "concerns", "concerned"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["about", "for", "over"]
+          }
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "until now",
+      "direction": "BACKWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "until recently",
+      "direction": "BACKWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "until the last",
+      "pattern": [
+        {
+          "LOWER": "until"
+        },
+        {
+          "LOWER": "the"
+        },
+        {
+          "LOWER": "last"
+        },
+        {
+          "OP": "?"
+        },
+        {
+          "LOWER": {
+            "IN": ["month", "months", "year", "years"]
+          }
+        }
+      ],
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "year ago",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["month", "months", "year", "years"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["ago", "earlier"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "used to be",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "used to",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "in the past",
+      "pattern": null,
+      "direction": "BIDIRECTIONAL"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "previous visit",
+      "pattern": null,
+      "direction": "BIDIRECTIONAL"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "HPI",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "history of",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "prior notes indicate",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "at the time",
+      "pattern": null,
+      "direction": "BIDIRECTIONAL"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "recalls childhood",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "a while ago",
+      "pattern": null,
+      "direction": "BIDIRECTIONAL"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "in 19x0s",
+      "pattern": [
+        {
+          "LOWER": "in"
+        },
+        {
+          "LOWER": {
+            "IN": ["1950s", "1960s", "1970s", "1980s", "1990s", "2000s"]
+          }
+        }
+      ],
+      "direction": "BACKWARD",
+      "max_scope": 3
+    },
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "absence of",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "adequate to rule out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["adequate", "sufficient"]
+          }
+        },
+        {
+          "LOWER": "to"
+        },
+        {
+          "LOWER": "rule"
+        },
+        {
+          "LOWER": {
+            "IN": ["him", "her", "them", "patient", "pt"]
+          },
+          "OP": "?"
+        },
+        {
+          "LOWER": "out"
+        },
+        {
+          "LOWER": {
+            "IN": ["against", "for"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "adequate to rule the patient out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["adequate", "sufficient"]
+          }
+        },
+        {
+          "LOWER": "to"
+        },
+        {
+          "LOWER": "rule"
+        },
+        {
+          "LOWER": "the"
+        },
+        {
+          "LOWER": {
+            "IN": ["patient", "pt"]
+          }
+        },
+        {
+          "LOWER": "out"
+        },
+        {
+          "LOWER": {
+            "IN": ["against", "for"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "any other",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "apart from",
+      "pattern": [
+        {
+          "LOWER": "apart"
+        },
+        {
+          "LOWER": {
+            "IN": ["for", "from"]
+          }
+        }
+      ],
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "are ruled out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["are", "is", "was"]
+          }
+        },
+        {
+          "LOWER": "ruled"
+        },
+        {
+          "LOWER": "out"
+        }
+      ],
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "as a cause for",
+      "pattern": [
+        {
+          "LOWER": "as"
+        },
+        {
+          "LOWER": {
+            "IN": ["a", "an", "the"]
+          }
+        },
+        {
+          "LOWER": "secondary",
+          "OP": "?"
+        },
+        {
+          "LOWER": {
+            "IN": ["cause", "etiology", "source", "reason"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["for", "of"]
+          }
+        }
+      ],
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "as has",
+      "pattern": null,
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "as needed",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "as well as any",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "aside from",
+      "pattern": null,
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "FAMILY",
+      "literal": "family",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": [
+              "aunt",
+              "aunts",
+              "brother",
+              "brothers",
+              "child",
+              "children",
+              "cousin",
+              "cousins",
+              "dad",
+              "dads",
+              "daughter",
+              "daughters",
+              "fam",
+              "family",
+              "families",
+              "father",
+              "fathers",
+              "grandchild",
+              "grandchildren",
+              "granddaughter",
+              "granddaughters",
+              "grandfather",
+              "grandfathers",
+              "grandmother",
+              "grandmothers",
+              "grandparent",
+              "grandparents",
+              "grandson",
+              "grandsons",
+              "husband",
+              "mom",
+              "moms",
+              "mother",
+              "mothers",
+              "nephew",
+              "nephews",
+              "niece",
+              "nieces",
+              "parent",
+              "parents",
+              "sibling",
+              "siblings",
+              "sister",
+              "sisters",
+              "son",
+              "sons",
+              "uncle",
+              "uncles",
+              "wife"
+            ]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["'s", "'"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "because",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["because", "since"]
+          }
+        }
+      ],
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "but",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["but", "however", "nevertheless", "still", "except", "though", "although", "yet"]
+          }
+        }
+      ],
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "can rule out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["can", "did"]
+          }
+        },
+        {
+          "LOWER": "rule"
+        },
+        {
+          "LOWER": {
+            "IN": ["him", "her", "them", "patient", "pt"]
+          },
+          "OP": "?"
+        },
+        {
+          "LOWER": "out"
+        },
+        {
+          "LOWER": {
+            "IN": ["against", "for"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "can rule the patient out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["can", "did"]
+          }
+        },
+        {
+          "LOWER": "rule"
+        },
+        {
+          "LOWER": "the"
+        },
+        {
+          "LOWER": {
+            "IN": ["patient", "pt"]
+          }
+        },
+        {
+          "LOWER": "out"
+        },
+        {
+          "LOWER": {
+            "IN": ["against", "for"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "cause for",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["cause", "causes", "reason", "reasons", "etiology"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["for", "of"]
+          }
+        }
+      ],
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "checked for",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "clear of",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "come back for",
+      "pattern": [
+        {
+          "LOWER": "come"
+        },
+        {
+          "LOWER": "back"
+        },
+        {
+          "LOWER": {
+            "IN": ["for", "to"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "decline",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["decline", "declined", "declines", "declining"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "deny",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["deny", "denied", "denies", "denying"]
+          }
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "did not rule out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["did", "could"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": "rule"
+        },
+        {
+          "LOWER": "out"
+        }
+      ],
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "does not look like",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["does", "did"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": "look"
+        },
+        {
+          "LOWER": "like"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "doubt",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "evaluate for",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "fails to reveal",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "free",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "free of",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "has been negative",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "has been ruled out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["has", "have"]
+          }
+        },
+        {
+          "LOWER": "been"
+        },
+        {
+          "LOWER": "ruled"
+        },
+        {
+          "LOWER": "out"
+        }
+      ],
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "history",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["history", "hx", "hist", "ho"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "PSEUDO",
+      "literal": "history",
+      "pattern": [
+        {
+          "LOWER": "social"
+        },
+        {
+          "LOWER": {
+            "IN": ["history", "hx"]
+          }
+        }
+      ],
+      "direction": "PSEUDO"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "h/o",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "if",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "inconsistent with",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "lack of",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 8
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "lacked",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["lacked", "lacking"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "may be ruled out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["may", "might", "must", "should", "will", "could", "can"]
+          },
+          "OP": "?"
+        },
+        {
+          "LOWER": "be"
+        },
+        {
+          "LOWER": "ruled"
+        },
+        {
+          "LOWER": "out"
+        }
+      ],
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "may be ruled out for",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["may", "might", "must", "should", "will", "could", "can"]
+          },
+          "OP": "?"
+        },
+        {
+          "LOWER": "be"
+        },
+        {
+          "LOWER": "ruled"
+        },
+        {
+          "LOWER": "out"
+        },
+        {
+          "LOWER": "for"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "might be",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["may", "might"]
+          }
+        },
+        {
+          "LOWER": "be"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "negative for",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["negative", "neg"]
+          }
+        },
+        {
+          "LOWER": "for"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "never had",
+      "pattern": [
+        {
+          "LOWER": "never"
+        },
+        {
+          "LOWER": {
+            "IN": ["developed", "had"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "no",
+      "pattern": [
+        {
+          "LOWER": "no"
+        },
+        {
+          "LOWER": {
+            "IN": ["abnormal", "new"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 2
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "no cause of",
+      "pattern": [
+        {
+          "LOWER": "no"
+        },
+        {
+          "LOWER": {
+            "IN": ["cause", "history", "findings", "complaints", "sign", "signs", "suggestion"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["of", "for"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "no findings to indicate",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "no longer present",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "no evidence",
+      "pattern": [
+        {
+          "LOWER": "no"
+        },
+        {
+          "LOWER": {
+            "IN": ["new", "other"]
+          },
+          "OP": "?"
+        },
+        {
+          "LOWER": {
+            "IN": ["mammographic", "radiographic"]
+          },
+          "OP": "?"
+        },
+        {
+          "LOWER": "evidence"
+        },
+        {
+          "LOWER": {
+            "IN": ["of", "for"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "no significant",
+      "pattern": [
+        {
+          "LOWER": "no"
+        },
+        {
+          "LOWER": {
+            "IN": ["significant", "suspicious"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not significant",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["significant", "suspicious"]
+          }
+        }
+      ],
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "non diagnostic",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["appear", "appreciate", "demonstrate", "exhibit", "feel", "had", "have", "reveal", "see"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not associated with",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": "associated"
+        },
+        {
+          "LOWER": "with"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "not ruled out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": "been",
+          "OP": "?"
+        },
+        {
+          "LOWER": "ruled"
+        },
+        {
+          "LOWER": "out"
+        }
+      ],
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not complain of",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["complain", "know"]
+          }
+        },
+        {
+          "LOWER": "of"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not have evidence of",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": "have"
+        },
+        {
+          "LOWER": "evidence"
+        },
+        {
+          "LOWER": {
+            "IN": ["of", "for"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not known to have",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": "known"
+        },
+        {
+          "LOWER": "to"
+        },
+        {
+          "LOWER": "have"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "not to be",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        },
+        {
+          "LOWER": "to"
+        },
+        {
+          "LOWER": "be"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "now resolved",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "origin for",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["origin", "origins"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["of", "for"]
+          }
+        }
+      ],
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "other possibilities of",
+      "pattern": null,
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "is to be ruled out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["is", "ought"]
+          }
+        },
+        {
+          "LOWER": "to"
+        },
+        {
+          "LOWER": "be"
+        },
+        {
+          "LOWER": "ruled"
+        },
+        {
+          "LOWER": "out"
+        },
+        {
+          "LOWER": {
+            "IN": ["for", "against"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "HISTORICAL",
+      "literal": "past history",
+      "pattern": [
+        {
+          "LOWER": "past"
+        },
+        {
+          "LOWER": "medical",
+          "OP": "?"
+        },
+        {
+          "LOWER": "history"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "patient was not",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["patient", "pt"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["was", "is"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 5
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "possible",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["poss", "possible", "probably", "likely"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "prophylaxis",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "r/o",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "rather than",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "resolved",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 5
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "return",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "ro",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "rule out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["may", "might", "must", "should", "will", "could"]
+          },
+          "OP": "?"
+        },
+        {
+          "LOWER": "rule"
+        },
+        {
+          "LOWER": {
+            "IN": ["him", "her", "them", "patient", "pt"]
+          },
+          "OP": "?"
+        },
+        {
+          "LOWER": "out"
+        },
+        {
+          "LOWER": {
+            "IN": ["against", "for"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "rule the patient out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["may", "might", "must", "should", "will", "could"]
+          },
+          "OP": "?"
+        },
+        {
+          "LOWER": "rule"
+        },
+        {
+          "LOWER": "the"
+        },
+        {
+          "LOWER": {
+            "IN": ["patient", "pt"]
+          }
+        },
+        {
+          "LOWER": "out"
+        },
+        {
+          "LOWER": {
+            "IN": ["against", "for"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "ruled out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["ruled", "rules"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["him", "her", "them", "patient", "pt"]
+          },
+          "OP": "?"
+        },
+        {
+          "LOWER": "out"
+        },
+        {
+          "LOWER": {
+            "IN": ["against", "for"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "ruled the patient out",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["ruled", "rules"]
+          }
+        },
+        {
+          "LOWER": "the"
+        },
+        {
+          "LOWER": {
+            "IN": ["patient", "pt"]
+          }
+        },
+        {
+          "LOWER": "out"
+        },
+        {
+          "LOWER": {
+            "IN": ["against", "for"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "secondary",
+      "pattern": [{
+          "LOWER": "secondary"
+        }, {
+          "LOWER": "to", "OP": "?"
+        }],
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "should he",
+      "pattern": [
+        {
+          "LOWER": "should"
+        },
+        {
+          "LOWER": {
+            "IN": ["she", "he", "they", "patient", "pt"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "should the patient",
+      "pattern": [
+        {
+          "LOWER": "should"
+        },
+        {
+          "LOWER": "the"
+        },
+        {
+          "LOWER": {
+            "IN": ["patient", "pt"]
+          }
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "HYPOTHETICAL",
+      "literal": "should there",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "source for",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["source", "sources"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["for", "of"]
+          }
+        }
+      ],
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "suggestive of",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "suspicious for",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "test for",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "to exclude",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "trigger event for",
+      "pattern": null,
+      "direction": "TERMINATE"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "unlikely",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "unremarkable for",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "was negative",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["was", "is", "are"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["negative", "neg"]
+          }
+        }
+      ],
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "was not",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["was", "is", "are", "can"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["not", "n't"]
+          }
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 5
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "what must be ruled out is",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "with no",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "without",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "without any evidence of",
+      "pattern": [
+        {
+          "LOWER": "without"
+        },
+        {
+          "LOWER": "any",
+          "OP": "?"
+        },
+        {
+          "LOWER": {
+            "IN": ["evidence", "indication", "sign"]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": ["of", "for"]
+          },
+          "OP": "?"
+        }
+      ],
+      "direction": "FORWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "worrisome for",
+      "pattern": null,
+      "direction": "FORWARD"
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "fear of",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "possibility of",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "in danger of",
+      "pattern": null,
+      "direction": "FORWARD",
+      "max_scope": 1
+    },
+    {
+      "category": "POSSIBLE_EXISTENCE",
+      "literal": "worry about",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": ["worry", "worries", "worried", "nervous"]
+          }
+        },
+        {
+          "LOWER": "about"
+        }
+      ],
+      "direction": "FORWARD",
+      "max_scope": 3
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": ": none",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": ": N",
+      "pattern": null,
+      "direction": "BACKWARD",
+      "max_scope": 5
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": ": Hardly ever",
+      "pattern": null,
+      "direction": "BACKWARD",
+      "max_scope": 5
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": ": Not at all",
+      "pattern": null,
+      "direction": "BACKWARD"
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": "no",
+      "pattern": null,
+      "direction": "BACKWARD",
+      "max_scope": 5
+    },
+    {
+      "category": "NEGATED_EXISTENCE",
+      "literal": ": no",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": [":", "):", "-"]
+          }
+        },
+        {
+          "LOWER": "no"
+        }
+      ],
+      "direction": "BIDIRECTIONAL"
+    }
+  ]
+}

@@ -41,9 +41,10 @@ A [rule-based pipeline](./sdohspacy/) for extracting SDoH domain categories and 
 ## 📚 Citation
 
 ```bibtex
-@article{wang2025sdoh,
-    title = {Extracting social determinants of health from electronic healthrecords: development and comparison of rule-based and largelanguage models-based methods},
-    year = {2025},
-    url = {TBD}
+@article {Wang2025.11.15.25339520,
+	author = {Wang, Bo and Kabir, Dia and Clark, Cheryl R and Choi, Karmel W and Smoller, Jordan W},
+	title = {Extracting social determinants of health from electronic health records: development and comparison of rule-based and large language models-based methods},
+	year = {2025},
+	url = {https://doi.org/10.1101/2025.11.15.25339520},
 }
 ```
